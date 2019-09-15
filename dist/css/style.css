@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  font-size: 16px; }
+
+body {
+  margin: 0 auto;
+  background-color: lightskyblue; }
+
+h2 {
+  text-align: center;
+  font-size: calc(1rem + 4vw);
+  margin: 1rem; }
+  h2 span {
+    color: purple;
+    padding: 0.5rem;
+    margin: 3px 3px; }
+
+h3 {
+  text-align: center;
+  font-size: calc(1rem + 2vw);
+  margin: 0.5vw; }
+  h3 span {
+    color: purple;
+    padding: 0.5rem;
+    margin: 3px 3px; }
+
+h4 {
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  margin: 0.5vw; }
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0.5rem;
+  background-color: lightseagreen; }
+  .main .logo {
+    min-width: 150px;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+    font-family: "Modak", cursive;
+    background-color: lightseagreen;
+    align-items: flex-start; }
+    .main .logo a {
+      font-size: 2rem;
+      margin: 0;
+      padding: 0;
+      color: black;
+      text-decoration: none; }
+  .main .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0.5rem;
+    background-color: #20b2aa; }
+    .main .container .menu {
+      justify-content: flex-end;
+      text-align: center;
+      align-self: center;
+      border-radius: 0.5rem;
+      margin: 0.2rem; }
+      .main .container .menu a {
+        font-size: 1.5rem;
+        color: black;
+        text-decoration: none;
+        margin: 10px 2px;
+        flex-shrink: 0; }
+      .main .container .menu a:hover {
+        color: #c24d01; }
+
+.introduction {
+  text-align: center;
+  font-family: "Modak", cursive;
+  background-color: #87cefa;
+  margin: 0;
+  padding: calc(25px + 1.5vw) 5px calc(35px + 1.5vw); }
+  .introduction img {
+    max-width: 800px;
+    width: 50vw; }
+  .introduction h1,
+  .introduction h2 {
+    font-weight: normal;
+    font-size: calc(1rem + 5vw);
+    margin: 0;
+    padding: 1rem; }
+
+.summary {
+  border-top: #c24d01 dotted 1px;
+  padding: calc(25px + 1.5vw) 5px calc(35px + 1.5vw);
+  margin: 0; }
+
+.round {
+  width: calc(280px + 15vw);
+  height: calc(280px + 15vw);
+  min-width: 280px;
+  max-width: 90vw;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 16px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #4949ab 0%, #5556c8 50%, #4949ab 100%);
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ffa280;
+  border-image: initial;
+  padding: 2px;
+  transition: border 0.6s ease 0s; }
+  .round p {
+    font-size: calc(9px + 0.5vw);
+    line-height: 1.7;
+    width: 80%;
+    padding-top: 25%;
+    margin: 0px auto;
+    text-align: center; }
+
+.projects {
+  border-top: #c24d01 dotted 1px;
+  padding: calc(25px + 1.5vw) 5px calc(35px + 1.5vw);
+  margin: 0; }
+  .projects .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 2vw; }
+    .projects .cards .item {
+      justify-content: center;
+      text-align: center;
+      background-color: brown;
+      margin: 0.5vw 3vw;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 16px; }
+
+.skills {
+  border-top: #c24d01 dotted 1px;
+  padding: calc(25px + 1.5vw) 20px calc(35px + 1.5vw) 20px;
+  margin: 0; }
+  .skills img {
+    width: 8vw;
+    height: auto; }
+  .skills .node_js {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .skills .js {
+    grid-column: 4/5;
+    grid-row: 1/2; }
+  .skills .php {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .skills .github {
+    grid-column: 3/4;
+    grid-row: 2/3; }
+  .skills .git {
+    grid-column: 5/6;
+    grid-row: 2/3; }
+  .skills .vs_code {
+    grid-column: 2/3;
+    grid-row: 3/4; }
+  .skills .sass {
+    grid-column: 4/5;
+    grid-row: 3/4; }
+
+.logos {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
+  grid-template-rows: auto;
+  padding: 5vh 5vw;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.contact {
+  border-top: #c24d01 dotted 1px;
+  padding: calc(25px + 1.5vw) 20px calc(35px + 1.5vw) 20px;
+  margin: 0; }
+  .contact p {
+    font-size: calc(1.5rem + 0.5vw);
+    line-height: 1.7;
+    width: 80%;
+    margin: 0px auto;
+    text-align: center; }
+  .contact .linkedin {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .contact .github_social {
+    grid-column: 4/5;
+    grid-row: 1/2; }
+  .contact img {
+    width: 8vw;
+    height: auto; }
+
+.contact_form {
+  border-top: #c24d01 dotted 1px;
+  padding: calc(25px + 1.5vw) 20px calc(35px + 1.5vw) 20px;
+  margin: 0;
+  text-align: center; }
+  .contact_form h2 {
+    margin: 0; }
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center; }
+    .main .menu {
+      min-width: 100%; } }
